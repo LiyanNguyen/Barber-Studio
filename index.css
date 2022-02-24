@@ -2,13 +2,10 @@
 
 :root {
 	font-family: 'Poppins', sans-serif;
-	--theme-color: #009688;
-}
-
-html{
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	overflow-x: hidden;
+	--theme-color: #009688;
+	--odd-section: #efefef;
 }
 
 html::-webkit-scrollbar {
@@ -46,22 +43,36 @@ html::-webkit-scrollbar-thumb {
 
 .banner-text {
 	text-align: center;
-	color: #fff;
+	color: white;
 	padding-top: 18rem;
 }
 
 .banner-text h1 {
 	font-size: 13rem;
 	font-family: 'Kaushan Script', cursive;
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-name: fadeUp;
 }
 
 .banner-text p {
 	font-size: 2rem;
 	font-style: italic;
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-name: fadeUp;
+	animation-delay: .8s;
 }
 
 .banner-btn {
 	margin: 7rem auto 0;
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-name: fadeUp;
+	animation-delay: 1.6s;
 }
 
 .banner-btn a {
@@ -96,6 +107,17 @@ html::-webkit-scrollbar-thumb {
 
 .banner-btn a:hover {
 	color: black;
+}
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(5rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 /* SIDE NAVIGATION */
@@ -250,7 +272,7 @@ nav ul li:hover a {
 #service {
 	width: 100%;
 	padding: 7rem 0;
-	background: #efefef;
+	background: var(--odd-section);
 }
 
 .service-box {
@@ -376,7 +398,7 @@ nav ul li:hover a {
 #footer {
 	width: 100%;
 	padding-top: 7rem;
-	background-color: #efefef;
+	background-color: var(--odd-section);
 	position: relative;
 }
 
