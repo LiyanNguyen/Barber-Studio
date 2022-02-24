@@ -1,0 +1,6 @@
+.service-desc {
+	font-size: 1.5rem;
+}
+.single-service:hover .service-desc {
+	transform: translateY(-40%);
+}

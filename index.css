@@ -296,9 +296,9 @@ nav ul li:hover a {
 	width: 80%;
 	position: absolute;
 	bottom: 0;
-	left: 6rem;
+	left: 10%;
 	opacity: 0;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	transition: .5s;
 }
 
@@ -312,7 +312,7 @@ nav ul li:hover a {
 
 /* make the description appear from bottom when hovered */
 .single-service:hover .service-desc {
-	transform: translateY(-100%);
+	transform: translateY(-70%);
 	opacity: 1;
 }
 
@@ -434,54 +434,4 @@ nav ul li:hover a {
 	background-color: var(--theme-color);
 	color: white;
 	transform: translateY(-1rem);
-}
-
-/* table and mobile phone, later change to separate table and mobile */
-@media screen and (max-width: 768px) {
-	.banner-text h1 {
-		font-size: 4.5rem;
-	}
-
-	.banner-btn a {
-		display: block;
-		margin: 2rem auto;
-	}
-
-	.title-text h1 {
-		font-size: 3.5rem;
-	}
-
-	.features {
-		flex-basis: 100%;
-	}
-
-	.features-img {
-		flex-basis: 100%;
-	}
-	
-	.features-img img {
-		width: 100%;
-	}
-
-	.single-service {
-		flex-basis: 100%;
-		margin-bottom: 3rem;
-	}
-
-	.service-desc hr {
-		margin: .5rem auto;
-	}
-
-	.testimonial-col {
-		flex-basis: 100%;
-	}
-
-	.footer-left,
-	.footer-right {
-		flex-basis: 100%;
-	}
-
-	.footer-img {
-	top: 25%;
-	}
 }
