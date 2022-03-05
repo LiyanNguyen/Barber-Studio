@@ -1,6 +1,6 @@
 let menuBtn = document.querySelector("#menuBtn");
 let sideNav = document.querySelector("#sideNav");
-let menu = document.querySelector("#menu");
+let menu = document.querySelector("#menuImg");
 
 menuBtn.onclick = () => {
 	sideNav.classList.toggle('openNav');
